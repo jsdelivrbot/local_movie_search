@@ -1,0 +1,8 @@
+<div class="top-panel">
+  <h1>Search movies in table</h1>
+  <app-search (search)="onSearch($event)"></app-search>
+</div>
+
+<div class="bottom-panel">
+  <app-movie-list [movies]="movieList$ | async"></app-movie-list>
+</div>
